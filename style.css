@@ -15,7 +15,7 @@ body{
 
 .inputBox{
 	position: relative;
-	width: 450vh;
+	width: 500px;
 }
 
 .inputBox h2{
@@ -61,4 +61,40 @@ body{
 
 .inputBox #btn:active{
 	background: #9c27b0;
+}
+
+.inputBox img{
+	width: 30px;
+	height: 30px;
+}
+
+.copy{
+	position: absolute;
+	top: 60px;
+	right: 15px;
+	cursor: pointer;
+	opacity: 0.2;
+}
+
+.copy:hover{
+	opacity: 1;
+}
+
+.alertBox{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: #9c27b0;
+	color: #fff;
+	text-align: center;
+	font-size> 4em;
+	display: none;
+}
+
+.alertBox.active{
+	dislpay: flex;
+	justify-content: center;
+	align-items: center;
 }

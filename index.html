@@ -9,9 +9,12 @@
 		<div class="inputBox">
 			<h2>Random Password Generator App</h2>
 			<input type="text" name="" placeholder="Create Password" id="password" readonly="">
+			<img src="copy.png" class="copy" onclick="copyPassword()">
 			<div id="btn" onclick="getPassword()">Generate Password</div>
-
+			<div class="alertBox"></div>
 			<script type="text/javascript">
+				var alertBox = document.querySelector('.alertBox');
+
 				function getPassword(){
 					var chars = "0123456789abcdefghijklmnopqrstuvxzABCDEFGHIJKLMNOPQRSTUVXZ!@#$%*()_{}[]£¢§";
 					var passwordLength = 16;
@@ -21,8 +24,20 @@
 						var randomNumber = Math.floor(Math.random() * chars.length);
 						password += chars.substring(randomNumber, randomNumber+1);
 					}
-					console.log('button pressed.')
 					document.getElementById("password").value = password;
+					alertBox.innerHTML = "New Password Copied: <br>" + password;
+				}
+
+				function copyPassword(){
+					var copyPassText = document.getElementById("password");
+					copyPassText.select();
+					copyPassText.setSelectionRange(0,9999);
+					document.execCommand("copy");
+					alertBox.classList.toggle('active');
+					setTimeout(function(){
+						alertBox.classList.toggle('active');
+					},2000)
+					console.log('copied.');
 				}
 			</script>
 		</div>
