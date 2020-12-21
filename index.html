@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
 		<title>Random Password Generator</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<div class="inputBox">
 			<h2>Random Password Generator App</h2>
 			<input type="text" name="" placeholder="Create Password" id="password" readonly="">
-			<div id="btn">Generate Password</div>
+			<div id="btn" onclick="getPassword()">Generate Password</div>
+
+			<script type="text/javascript">
+				function getPassword(){
+					var chars = "0123456789abcdefghijklmnopqrstuvxzABCDEFGHIJKLMNOPQRSTUVXZ!@#$%*()_{}[]£¢§";
+					var passwordLength = 16;
+					var password = "";
+
+					for (var i=0; i<passwordLength; i++){
+						var randomNumber = Math.floor(Math.random() * chars.length);
+						password += chars.substring(randomNumber, randomNumber+1);
+					}
+					console.log('button pressed.')
+					document.getElementById("password").value = password;
+				}
+			</script>
 		</div>
 	</body>
 </html>
