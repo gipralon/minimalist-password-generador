@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*Roboto 400 regular*/
+
 *{
 	margin: 0;
 	padding: 0;
@@ -11,6 +13,34 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	background: #f8f8f8;
+}
+
+body.dark{
+	
+}
+
+#theme{
+	display: inline-block;
+	position: absolute;
+	padding: 8px;
+	width: auto;
+	height: auto;
+
+	bottom: 90%;
+	left: 88%;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+
+	opacity: 0.8;
+
+	border: 2px solid #000;
+	border-radius: 13px;
+}
+
+#theme:hover{
+	opacity: 1;
+	cursor: pointer;
 }
 
 .inputBox{
@@ -101,7 +131,7 @@ body{
 
 #source{
 	position: absolute;
-	display: flex;
+	display: inline-block;
 	right: 90%;
 	top: 92%;
 	align-items: center;
