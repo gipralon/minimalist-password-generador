@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Random Password Generator</title>
 		<link rel="stylesheet" href="style.css">
+		<script src="/scripts/passwordGenerator.js" defer></script>
 	</head>
 	<body class="">
 		<button type="button" id="theme">Switch Theme</button>
@@ -14,36 +15,11 @@
 			<img src="image/copy.svg" class="copy" onclick="copyPassword()">
 			<div id="btn" onclick="getPassword()">Generate Password</div>
 			<div class="alertBox"></div>
-
-			<script type="text/javascript">
-				var alertBox = document.querySelector('.alertBox');
-
-				function getPassword(){
-					var chars = "0123456789abcdefghijklmnopqrstuvxzABCDEFGHIJKLMNOPQRSTUVXZ!@#$%*()_{}[]£¢§";
-					var passwordLength = 16;
-					var password = "";
-
-					for (var i=0; i<passwordLength; i++){
-						var randomNumber = Math.floor(Math.random() * chars.length);
-						password += chars.substring(randomNumber, randomNumber+1);
-					}
-					document.getElementById("password").value = password;
-					alertBox.innerHTML = "New Password Copied: <br>" + password;
-				}
-
-				function copyPassword(){
-					var copyPassText = document.getElementById("password");
-					copyPassText.select();
-					copyPassText.setSelectionRange(0,9999);
-					document.execCommand("copy");
-					alertBox.classList.toggle('active');
-					setTimeout(function(){
-						alertBox.classList.toggle('active');
-					},2000)
-					console.log('copied.');
-				}
-			</script>
 		</div>
-		<a href="https://youtu.be/fOvYE1i_IiY" id="source">Original YouTube Video by Online Tutorials</a>
+	
+		<div class="source">
+			<a href="https://youtu.be/fOvYE1i_IiY">Original YouTube Video by Online Tutorials</a>
+		</div>
+		
 	</body>
 </html>

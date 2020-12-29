@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*Roboto 400 regular*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); /*font-family: 'Roboto Mono', monospace;*/
 
 *{
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	user-select: none;
 }
 
@@ -11,8 +12,10 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100vw;
 	min-height: 100vh;
 	background: #f8f8f8;
+	overflow: hidden;
 }
 
 body.dark{
@@ -20,14 +23,14 @@ body.dark{
 }
 
 #theme{
-	display: inline-block;
+	display: flex;
 	position: absolute;
 	padding: 8px;
 	width: auto;
 	height: auto;
 
-	bottom: 90%;
-	left: 88%;
+	bottom: 92%;
+	left: 90%;
 
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
@@ -41,6 +44,9 @@ body.dark{
 #theme:hover{
 	opacity: 1;
 	cursor: pointer;
+	background-color: #8a8a8a;
+	color: #e3e3e3;
+	transition: 0.5s;
 }
 
 .inputBox{
@@ -76,6 +82,7 @@ body.dark{
 
 .inputBox input::placeholder{
 	letter-spacing: 0px;
+	font-family: 'Roboto Mono', monospace;
 }
 
 .inputBox #btn{
@@ -119,21 +126,20 @@ body.dark{
 	background: #9c27b0;
 	color: #fff;
 	text-align: center;
-	font-size> 4em;
+	font-size: 4em;
 	display: none;
 }
 
 .alertBox.active{
-	dislpay: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-#source{
+.source{
 	position: absolute;
-	display: inline-block;
-	right: 90%;
-	top: 92%;
-	align-items: center;
-	justify-content: center;
+	display: flex;
+	right: 83%;
+	top: 95%;
+	white-space: nowrap;
 }
