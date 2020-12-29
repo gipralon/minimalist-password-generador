@@ -5,9 +5,12 @@
 		<title>Random Password Generator</title>
 		<link rel="stylesheet" href="style.css">
 		<script src="/scripts/passwordGenerator.js" defer></script>
+		<script src="/scripts/darkMode.js" defer></script>
+
+		</script>
 	</head>
-	<body class="">
-		<button type="button" id="theme">Switch Theme</button>
+	<body>
+		<button type="button" id="theme" onclick="darkMode()">Switch Theme</button>
 
 		<div class="inputBox">
 			<h2>Random Password Generator App</h2>
@@ -16,10 +19,10 @@
 			<div id="btn" onclick="getPassword()">Generate Password</div>
 			<div class="alertBox"></div>
 		</div>
-	
+
 		<div class="source">
 			<a href="https://youtu.be/fOvYE1i_IiY" target="blank">Original YouTube Video by Online Tutorials</a>
 		</div>
-		
+
 	</body>
 </html>
