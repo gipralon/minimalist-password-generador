@@ -12,7 +12,7 @@ function getPassword(){
         
         document.getElementById("password").value = password;
 		alertBox.innerHTML = "New Password Copied: <br>" + password;
-		}
+	}
 
 function copyPassword(){
 	var copyPassText = document.getElementById("password");
@@ -23,5 +23,5 @@ function copyPassword(){
 	setTimeout(function(){
 	    alertBox.classList.toggle('active');
 		},2000)
-	console.log('copied.');
-	}
+    console.log('password copied.');
+}
