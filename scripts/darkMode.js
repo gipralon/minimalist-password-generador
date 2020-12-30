@@ -1,22 +1,21 @@
-const theme = document.querySelector('theme');
+const theme = document.querySelector('button#theme');
 const body = document.querySelector('body');
 const title = document.querySelector('.inputBox h2');
 const btn = document.querySelector('.inputBox #btn');
 const password = document.querySelector('.inputBox input#password');
 const source = document.querySelector('.source a');
 
-function darkMode(){
+function themes(){
   console.log('click.');
   if(body.classList==''){
-    body.classList.toggle('dark');
     dark();
-  } else if(body.classList=='dark'){
-    body.classList.remove('dark');
+  } else{
     light();
   }
 }
 
 function dark(){
+  body.classList.toggle('dark');
   body.style.backgroundColor = "#2c2c2c";
   title.style.color = "#fff";
   btn.style.color = "#000";
@@ -31,10 +30,12 @@ function dark(){
 }
 
 function light(){
+  body.removeAttribute('class')
   body.removeAttribute('style');
   title.removeAttribute('style');
   btn.removeAttribute('style');
   password.removeAttribute('style');
+  theme.removeAttribute('style');
   source.removeAttribute('style');
   console.log('light mode sucefully applied.');
 }
