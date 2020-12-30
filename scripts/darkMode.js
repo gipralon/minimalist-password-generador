@@ -5,11 +5,18 @@ const btn = document.querySelector('.inputBox #btn');
 const password = document.querySelector('.inputBox input#password');
 const source = document.querySelector('.source a');
 
-
-
 function darkMode(){
   console.log('click.');
-  body.classList.add('dark');
+  if(body.classList==''){
+    body.classList.toggle('dark');
+    dark();
+  } else if(body.classList=='dark'){
+    body.classList.remove('dark');
+    light();
+  }
+}
+
+function dark(){
   body.style.backgroundColor = "#2c2c2c";
   title.style.color = "#fff";
   btn.style.color = "#000";
@@ -20,4 +27,9 @@ function darkMode(){
   source.style.color = "grey";
   theme.style.backgroundColor = "#f8f8f8";
   theme.style.color = "#333";
+  console.log('dark mode successfully applied.');
+}
+
+function light(){
+  console.log('light mode sucefully applied.');
 }
