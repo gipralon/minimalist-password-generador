@@ -24,10 +24,6 @@ body{
 	overflow: hidden;
 }
 
-body.dark{
-	/*background-color: var(--bg-color-dark);*/
-}
-
 #theme{
 	display: flex;
 	position: relative;
@@ -49,8 +45,8 @@ body.dark{
 #theme:hover{
 	opacity: 1;
 	cursor: pointer;
-	background-color: #8a8a8a;
-	color: #e3e3e3;
+	background-color: var(--bg-color-dark);
+	color: var(--text-color-dark);
 	transition: 0.5s;
 }
 

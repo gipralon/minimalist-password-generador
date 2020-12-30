@@ -3,6 +3,9 @@ const body = document.querySelector('body');
 const title = document.querySelector('.inputBox h2');
 const btn = document.querySelector('.inputBox #btn');
 const password = document.querySelector('.inputBox input#password');
+const source = document.querySelector('.source a');
+
+
 
 function darkMode(){
   console.log('click.');
@@ -14,8 +17,7 @@ function darkMode(){
   password.style.color = "#fff";
   password.style.border = "2px solid rgba(0,0,0,0.4)";
   password.style.boxShadow = "none";
-
-
-
-  //body.classList.remove('dark');
+  source.style.color = "grey";
+  theme.style.backgroundColor = "#f8f8f8";
+  theme.style.color = "#333";
 }
