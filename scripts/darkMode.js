@@ -1,4 +1,4 @@
-const theme = document.getElementById('theme');
+const theme = document.querySelector('theme');
 const body = document.querySelector('body');
 const title = document.querySelector('.inputBox h2');
 const btn = document.querySelector('.inputBox #btn');
@@ -31,5 +31,10 @@ function dark(){
 }
 
 function light(){
+  body.removeAttribute('style');
+  title.removeAttribute('style');
+  btn.removeAttribute('style');
+  password.removeAttribute('style');
+  source.removeAttribute('style');
   console.log('light mode sucefully applied.');
 }
