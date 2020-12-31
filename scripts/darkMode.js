@@ -27,6 +27,8 @@ function dark(){
   theme.style.backgroundColor = "#f8f8f8";
   theme.style.color = "#333";
   theme.innerText = "Light Mode";
+  body.style.transitionDelay = "0.3s";
+  body.style.transitionDuration = "1s";
   console.log('dark mode successfully applied.');
 }
 
@@ -40,5 +42,7 @@ function light(){
   theme.removeAttribute('innerText');
   theme.innerText = "Dark Mode";
   //source.removeAttribute('style');
+  body.style.transitionDelay = "0.3s";
+  body.style.transitionDuration = "1s"
   console.log('light mode sucefully applied.');
 }
