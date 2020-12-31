@@ -23,7 +23,7 @@ function dark(){
   password.style.color = "#fff";
   password.style.border = "2px solid rgba(0,0,0,0.4)";
   password.style.boxShadow = "none";
-  source.style.color = "grey";
+  //source.style.color = "grey";
   theme.style.backgroundColor = "#f8f8f8";
   theme.style.color = "#333";
   console.log('dark mode successfully applied.');
@@ -36,6 +36,6 @@ function light(){
   btn.removeAttribute('style');
   password.removeAttribute('style');
   theme.removeAttribute('style');
-  source.removeAttribute('style');
+  //source.removeAttribute('style');
   console.log('light mode sucefully applied.');
 }
