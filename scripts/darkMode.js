@@ -26,6 +26,7 @@ function dark(){
   //source.style.color = "grey";
   theme.style.backgroundColor = "#f8f8f8";
   theme.style.color = "#333";
+  theme.innerText = "Light Mode";
   console.log('dark mode successfully applied.');
 }
 
@@ -36,6 +37,8 @@ function light(){
   btn.removeAttribute('style');
   password.removeAttribute('style');
   theme.removeAttribute('style');
+  theme.removeAttribute('innerText');
+  theme.innerText = "Dark Mode";
   //source.removeAttribute('style');
   console.log('light mode sucefully applied.');
 }
