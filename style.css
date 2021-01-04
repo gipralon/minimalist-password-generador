@@ -98,7 +98,8 @@ body{
 }
 
 .inputBox #btn:active{
-	background: #9c27b0;
+	background: darkolivegreen;
+	transform: scale(1.1);
 }
 
 .inputBox img{
@@ -141,28 +142,19 @@ footer{
 	display: flex;
 	position: relative;
 	top: 45%;
-	right: 65%;
+	right: 62vw;
 }
 
 footer a img{
 	width: 30px;
 	height: 30px;
 	padding: 5px;
+	opacity: 0.9;
 }
 
-
-/*
-.source{
-	position: relative;
-	display: flex;
-	top: 47%;
-	right: 62%;
-	white-space: nowrap;
+footer a img:hover{
+	opacity: 1;
+	width: 35px;
+	height: 35px;
+	transition: 0.3s;
 }
-
-.source img{
-	width: 30px;
-	height: 30px;
-	cursor: pointer;
-}
-*/

@@ -2,7 +2,7 @@ var alertBox = document.querySelector('.alertBox');
 
 function getPassword(){
 	var chars = "0123456789abcdefghijklmnopqrstuvxzABCDEFGHIJKLMNOPQRSTUVXZ!@#$%*()_{}[]£¢§";
-	var passwordLength = 16;
+	var passwordLength = 20;
 	var password = "";
 
 	for (var i=0; i<passwordLength; i++){
