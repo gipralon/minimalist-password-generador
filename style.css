@@ -140,9 +140,9 @@ body{
 
 footer{
 	display: flex;
-	position: relative;
-	top: 45%;
-	right: 62vw;
+	position: fixed;
+	top: 93%;
+	right: 90%;
 }
 
 footer a img{
