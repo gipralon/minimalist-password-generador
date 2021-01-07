@@ -150,7 +150,12 @@ footer{
 	display: flex;
 	position: fixed;
 	top: 93%;
-	right: 90%;
+	padding: 0;
+	width: 100px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000; /*delete this line*/
 }
 
 footer a img{
@@ -165,4 +170,22 @@ footer a img:hover{
 	width: 35px;
 	height: 35px;
 	transition: 0.3s;
+}
+
+@media(max-width: 500px){
+	body{
+		justify-content: center;
+		align-items: center;
+	}
+
+	.inputBox{
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		right: 10%;
+	}
+
+	.inputBox input{
+		width: 100%;
+	}
 }
