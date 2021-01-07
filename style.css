@@ -23,7 +23,7 @@ body{
 	background: var(--bg-color);
 	overflow: hidden;
 }
-
+/*
 #theme{
 	display: flex;
 	position: relative;
@@ -53,10 +53,11 @@ body{
 #theme:active{
 	transform: scale(0.90);
 }
-
+*/
 .inputBox{
 	position: relative;
-	width: 33%;
+	width: 50%;
+	border: 1px solid #000;
 }
 
 .inputBox h2{
@@ -66,7 +67,7 @@ body{
 
 .inputBox input{
 	position: relative;
-	width: 100%;
+	width: 65%;
 	height: 50px;
 	border: none;
 	margin: 15px 0 20px;
@@ -108,11 +109,13 @@ body{
 .inputBox img{
 	width: 30px;
 	height: 30px;
+	top: 40%;
+	right: 37%;
 }
 
 .copy{
 	position: absolute;
-	top: 60px;
+	/*top: 60px;*/
 	right: 15px;
 	cursor: pointer;
 	opacity: 0.2;
