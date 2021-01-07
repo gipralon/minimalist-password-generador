@@ -6,13 +6,14 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="icon" href="/image/secure.svg">
 		<script src="/scripts/passwordGenerator.js" defer></script>
-		<script src="/scripts/darkMode.js" defer></script>
+		<script src="/scripts/themes.js" defer></script>
 
 		</script>
 	</head>
 	<body>
+		<!--
 		<button type="button" id="theme" onclick="themes()">Dark Mode</button>
-
+		-->
 		<div class="inputBox">
 			<h2>Password Generator</h2>
 			<input type="text" name="" placeholder="Create Password" id="password" readonly="">
@@ -22,13 +23,16 @@
 		</div>
 
 		<footer>
-			<a id="youtube"
+
+			<img class="themes" src="/image/themes.svg" alt="Themes Switcher" onclick="themes()" title="Switch themes.">
+
+			<a class="youtube"
 			href="https://youtu.be/fOvYE1i_IiY" target="blank">
 			<img src="/image/youtube.svg" alt="Original YouTube Video by Online Tutorials" title="Original YouTube Video by Online Tutorials">
 			</a>
 			<br>
-			<a id="github"
-			href="http://github.com/gipralon" target="blank">
+			<a class="github"
+			href="https://github.com/gipralon/minimalist-password-generator" target="blank">
 			<img src="/image/github.svg" alt="GitHub Repository" title="GitHub repository">
 			</a>
 		</footer>

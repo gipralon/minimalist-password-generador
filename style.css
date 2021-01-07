@@ -151,11 +151,24 @@ footer{
 	position: fixed;
 	top: 93%;
 	padding: 0;
-	width: 100px;
+	width: auto;
 	height: 50px;
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #000; /*delete this line*/
+}
+
+footer img {
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	padding: 20px;
+	opacity: 0.8;
+	transform: scale(0.90);
+}
+
+footer img:hover{
+	opacity: 1;
 }
 
 footer a img{
@@ -167,9 +180,9 @@ footer a img{
 
 footer a img:hover{
 	opacity: 1;
-	width: 35px;
+	/*width: 35px;
 	height: 35px;
-	transition: 0.3s;
+	transition: 0.3s;*/
 }
 
 @media(max-width: 500px){
@@ -182,7 +195,6 @@ footer a img:hover{
 		width: 100%;
 		justify-content: center;
 		align-items: center;
-		right: 10%;
 	}
 
 	.inputBox input{
