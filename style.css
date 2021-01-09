@@ -56,7 +56,7 @@ body{
 */
 .inputBox{
 	position: relative;
-	width: 50%;
+	width: 30%;
 	border: 1px solid #000;
 }
 
@@ -67,7 +67,7 @@ body{
 
 .inputBox input{
 	position: relative;
-	width: 65%;
+	width: 100%;
 	height: 50px;
 	border: none;
 	margin: 15px 0 20px;
@@ -110,7 +110,7 @@ body{
 	width: 30px;
 	height: 30px;
 	top: 40%;
-	right: 37%;
+	right: 2%;
 }
 
 .copy{
@@ -202,5 +202,9 @@ footer a img:hover{
 
 	.inputBox input{
 		width: 100%;
+	}
+
+	.inputBox img{
+		right: 5%;
 	}
 }
