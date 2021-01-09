@@ -56,7 +56,7 @@ body{
 */
 .inputBox{
 	position: relative;
-	width: 30%;
+	width: 50%;
 	border: 1px solid #000;
 }
 
@@ -189,22 +189,9 @@ footer a img:hover{
 }
 
 @media(max-width: 500px){
-	body{
-		justify-content: center;
-		align-items: center;
-	}
-
 	.inputBox{
 		width: 100%;
 		justify-content: center;
 		align-items: center;
-	}
-
-	.inputBox input{
-		width: 100%;
-	}
-
-	.inputBox img{
-		right: 5%;
 	}
 }
