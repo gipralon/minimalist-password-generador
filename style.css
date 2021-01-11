@@ -188,10 +188,8 @@ footer a img:hover{
 	transition: 0.3s;*/
 }
 
-@media(max-width: 500px){
+@media(min-width: 100px) and (max-width: 600px){
 	.inputBox{
 		width: 100%;
-		justify-content: center;
-		align-items: center;
 	}
 }
