@@ -57,7 +57,7 @@ body{
 .inputBox{
 	position: relative;
 	width: 50%;
-	border: 1px solid #000;
+	border: 1px solid #000; /*delete this line*/
 }
 
 .inputBox h2{
