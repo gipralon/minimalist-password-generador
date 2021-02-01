@@ -23,41 +23,10 @@ body{
 	background: var(--bg-color);
 	overflow: hidden;
 }
-/*
-#theme{
-	display: flex;
-	position: relative;
-	padding: 8px;
-	width: auto;
-	height: auto;
 
-	bottom: 45%;
-	left: 60%;
-
-	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-
-	opacity: 0.8;
-	border: 2px solid #000;
-	border-radius: 13px;
-}
-
-#theme:hover{
-	opacity: 1;
-	cursor: pointer;
-	background-color: var(--bg-color-dark);
-	color: var(--text-color-dark);
-	transition: 0.5s;
-}
-
-#theme:active{
-	transform: scale(0.90);
-}
-*/
 .inputBox{
 	position: relative;
 	width: 50%;
-	border: 1px solid #000; /*delete this line*/
 }
 
 .inputBox h2{
@@ -115,7 +84,6 @@ body{
 
 .copy{
 	position: absolute;
-	/*top: 60px;*/
 	right: 15px;
 	cursor: pointer;
 	opacity: 0.2;
@@ -158,7 +126,6 @@ footer{
 	height: 50px;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid #000; /*delete this line*/
 }
 
 footer img {
@@ -183,9 +150,6 @@ footer a img{
 
 footer a img:hover{
 	opacity: 1;
-	/*width: 35px;
-	height: 35px;
-	transition: 0.3s;*/
 }
 
 @media(min-width: 100px) and (max-width: 600px){
