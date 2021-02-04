@@ -19,9 +19,10 @@ function copyPassword(){
 	copyPassText.select();
 	copyPassText.setSelectionRange(0,9999);
 	document.execCommand("copy");
-	alertBox.classList.toggle('active');
+	alert('Password copied to clipboard.');
+/*alertBox.classList.toggle('active');
 	setTimeout(function(){
-	    alertBox.classList.toggle('active');
-		},2000)
+	    //alertBox.classList.toggle('active');
+		},2000)*/
     console.log('password copied.');
 }
