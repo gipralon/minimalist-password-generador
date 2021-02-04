@@ -10,8 +10,8 @@ function getPassword(){
 		password += chars.substring(randomNumber, randomNumber+1);
 		}
 
-        document.getElementById("password").value = password;
-		alertBox.innerHTML = "New Password Copied: <br>" + password;
+    document.getElementById("password").value = password;
+		//alertBox.innerHTML = "New Password Copied: <br>" + password;
 	}
 
 function copyPassword(){
